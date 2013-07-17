@@ -1,13 +1,29 @@
+CLUBS = u"\u2663"
+HEARTS = u"\u2665"
+DIAMONDS = u"\u2666"
+SPADES = u"\u2660"
+
+suits = [CLUBS, HEARTS, DIAMONDS, SPADES]
+
+
 class Card(object):
 
-    def symbol(self):
-        pass
+    def __init__(self, symbol, suit):
+        self.symbol = symbol
+        self.suit = suit
 
-    def suit(self):
-        pass
 
-    def value(self):
-        pass
+def new_deck():
+    deck = []
+    
+    symbols = [str(value) for value in range(2,11)] + ['J', 'Q', 'K', 'A']
 
-    def is_visible(self):
-        pass
+    for symbol in symbols:
+        for suit in suits:
+            deck.append(Card(symbol, suit))
+
+    return deck
+    
+
+    
+    
