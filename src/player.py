@@ -3,8 +3,11 @@
 
 class Player(object):
 
+    def __init__(self, hand):
+        self._hand = hand
+
     def in_hand(self):
-        pass
+        return self._hand
 
     def stand(self):
         pass
