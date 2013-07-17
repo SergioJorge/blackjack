@@ -9,6 +9,9 @@ class Card(object):
     def value(self):
         pass
 
+    def is_visible(self):
+        pass
+
 
 class Player(object):
 
@@ -25,5 +28,12 @@ class Player(object):
 class Human(Player):
     pass
 
+
 class Dealer(Player):
     pass
+
+
+class Game(object):
+
+    def __init__(self, players):
+        pass
