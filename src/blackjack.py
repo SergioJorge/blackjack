@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 class Card(object):
 
     def symbol(self):
@@ -11,20 +14,7 @@ class Card(object):
 
     def is_visible(self):
         pass
-
-
-class Player(object):
-
-    def in_hand(self):
-        pass
-
-    def stand(self):
-        pass
-
-    def hit(self):
-        pass
-
-
+    
 class Human(Player):
     pass
 
