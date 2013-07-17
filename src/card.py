@@ -23,7 +23,3 @@ def new_deck():
             deck.append(Card(symbol, suit))
 
     return deck
-    
-
-    
-    
