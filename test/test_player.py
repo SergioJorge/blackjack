@@ -1,15 +1,12 @@
-# -*- coding: utf-8 -*-
-
 import unittest
+
+from card import Card
 from player import Player
 
 
-class TestPlayer(unittest.TestCase):
+class PlayerTestCase(unittest.TestCase):
 
-    def test_should_have_a_instance_of_player(self):
-        player = Player()
-        self.assertTrue(player)
-    
-
-if __name__ == "__main__":
-    unittest.main()
+    def test_in_hand(self):
+        hand = [Card(), Card()]
+        p = Player(hand)
+        self.assertEqual(hand, p.in_hand())
