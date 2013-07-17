@@ -1,11 +1,13 @@
+default: all
+
 all: test
 
 dependencies:
-    @pip install -r test-requirements.txt
+	@pip install -r test-requirements.txt
 
 clean:
-    @find . -name "*.pyc" -delete
+	@find . -name "*.pyc" -delete
 
 test: dependencies clean
-    @echo "Running all tests..."
-    nosetests
+	@echo "Running all tests..."
+	nosetests
